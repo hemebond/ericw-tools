@@ -34,6 +34,7 @@ int main(int argc, char *argv[])
     // allow non-integer monitor scaling
     QGuiApplication::setHighDpiScaleFactorRoundingPolicy(Qt::HighDpiScaleFactorRoundingPolicy::PassThrough);
 
+    QCoreApplication::setAttribute(Qt::AA_UseDesktopOpenGL);
     QApplication a(argc, argv);
     a.setStyle("fusion");
     a.setPalette(QPalette(QColor(64, 64, 64)));
